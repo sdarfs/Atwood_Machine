@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AtwoodMachine</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+
+<div id="moveable">
+
+  <div id="thread_top"></div>
+  <div id="thread_left"></div>
+  <div id="thread_right"></div>
+  <div class="mass" id="mass_right"></div>
+  <div class="mass" id="mass_left"></div>
+  <div id="wheel"></div>
+
+</div>
+
+
+<div class="grid-container">
+
+    <div class="grid-item1">
+    <div id ="floating-button">
+        <button class="floating-button"  id="button_start">СТАРТ</button>
+
+        <button class="floating-button" id="button_reset">СБРОС</button>
+
+        <button class="floating-button" id="button_add" >ДОБАВИТЬ</button>
+
+        <button class="floating-button" id="button_take_away">ОТНЯТЬ</button>
+
+        <button class="floating-button" id="button_lab1">m1+m2=const</button>
+
+        <button class="floating-button" id="button_lab2">Δm = const</button>
+
+        <button class="floating-button" id="button_move">Анимация</button>
+    </div>
+    </div>
+    <div class="grid-item2">
+    <h3>Информация</h3>
+    <label>Масса 1:</label><input type="number" id="masa1" min ="0" value = "0.0" name="masa1" onkeyup="this.value=this.value.replace(/[^\d\.,]+/g'')"><label>гр;</label>
+    <label>Масса 2:</label><input type="number" id="masa2" min ="0" value = "0.0" name="masa2" onkeyup="this.value=this.value.replace(/[^\d\.,]+/g'')" ><label>гр;</label><br>
+    <label>Гравитационная постоянная:</label><input type="number" id="gravedad" name="gravedad" value="9.8" step = "0.1" onkeyup="this.value=this.value.replace(/[^\d\.,]+/g'')">
+    <label>Высота:</label><input type="number" id="height"  min ="0.0" value = "0.0" name="height" step = "0.1"  onkeyup="this.value=this.value.replace(/[^\d\.,]+/g'')" ><label>м;</label>
+    <label>Δm :</label><input type="number" value="0.0" id="delta" min ="0" name="delta_massa" onkeyup="this.value=this.value.replace(/[^\d\.,]+/g'')"><label>гр;</label>
+    </div>
+    <div class="grid-item3">
+    <h3>Время</h3>
+
+    <label>t1:</label><input type="text" id="time1"  name="time_1" >
+    <label>t2:</label><input type="text" id="time2"  name="time_2" >
+    <label>t3:</label><input type="text" id="time3"  name="time_3" >
+    <label>t4:</label><input type="text" id="time4"  name="time_4" >
+    <label>t5:</label><input type="text" id="time5"  name="time_5" >
+    </div>
+
+</div>
+<button class="btn" data-path="form-popup">Помощь</button>
+
+<div class="modals">
+    <div class="modal-overlay">
+        <div class="modal modal--1" data-target="form-popup">
+            <p> "В программе представлено два режима работы, который необходимо выбрать:<br>
+                1. Сумма масс - константа. Обязателен ввод массы 1 и массы 2. Можно ввести как две равные массы(Например: масса 1: 10, масса 2: 10), так и различные(Например: масса 1: 8, масса 2: 12). Дельта масс высчисляется по формуле 0.1(m1+m2).Если вы ввели равные массы, то в полях 't1-t5' должно появится значение 'Infinity'. Далее достаточно использовать одну кнопку Отнять.<br>
+                2.Дельта масс - константа. Обязателен ввод массы1 и дельты. Масса 2 вычисляется сама по формуле масса 1 + дельта массы.<br>
+                Обязательное поле ввода - высота.<br>
+                После того, как были введены необходимые данные, необходимо нажать кнопку 'СТАРТ' и только после этого нажимать кнопку отнять/добавить массу.<br>
+                Начать выполнение заново или перейти к другому режиму работы - кнопка 'СБРОС'.<br>
+                Также, в программе представлена анимация машины Атвуда."</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="src/script.js"></script>
+
+</body>
+</html>
