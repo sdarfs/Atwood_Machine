@@ -17,8 +17,8 @@ body {
   background-image: url(circle.png);
   top: 80px;
   background-size: cover;
-  width: 210px;
-  height: 210px;
+  width: 165px;
+  height: 165px;
   left: 995px;
 }
 
@@ -26,8 +26,8 @@ body {
 
 #thread_top {
   position: absolute;
-  width: 210px;
-  height: 210px;
+  width: 165px;
+  height: 165px;
   top: 85px;
   border-radius: 50% 50% 1% 1%;
   border-top: 5px solid #292c2c;
@@ -41,7 +41,7 @@ body {
   width: 5px;
   height: 405px;
   left: 990px;
-  top: 190px;
+  top: 160px;
   background-color: #292c2c;
 }
 
@@ -49,8 +49,8 @@ body {
   position: absolute;
   height:400px;
   width: 5px;
-  left: 1205px;
-  top: 190px;
+  left: 1160px;
+  top: 160px;
   background-color: #292c2c;
 }
 
@@ -63,14 +63,14 @@ body {
 
 #mass_right {
   background: url(mass.png);
-  left: 1177px;
-  top:535px;
+  left: 1135px;
+  top:500px;
 
 }
 #mass_left {
   background: url(mass.png);
   left: 962px;
-  top: 535px;
+  top: 500px;
 }
 
 

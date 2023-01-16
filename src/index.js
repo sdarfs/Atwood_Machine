@@ -275,31 +275,31 @@ function animate(){
         let angular_acceleration = acceleration/r;
 		if(m1 > m2){
 			rotate = "rotate("+angular_acceleration+"deg)";
-			b1 = "80%";
-			b2 = "40%";
-			c1 = "485px";
-			c2 = "145px";
+			b1 = "65%";
+        	b2 = "35%";
+			c1 = "425px";
+            c2 = "125px";
 		} else if(m1 < m2){
 			rotate = "rotate("+angular_acceleration+"deg)";
-			b1 = "40%";
-			b2 = "80%";
-			c1 = "145px";
-			c2 = "485px";
+			b1 = "35%";
+            b2 = "65%";
+			c1 = "125px";
+            c2 = "425px";
 		}
 
-		wheels.style.transition = "2s";
+		wheels.style.transition = "3s";
 		wheels.style.transform = rotate;
 
-		mass_left.style.transition = "2s"
+		mass_left.style.transition = "3s"
 		mass_left.style.top = b1;
 
-		mass_right.style.transition = "2s"
+		mass_right.style.transition = "3s"
 		mass_right.style.top = b2;
 
-		left.style.transition = "2s"
-		left.style.height = c1;
+		left.style.transition = "3s"
+        left.style.height = c1;
 
-		right.style.transition = "2s"
+		right.style.transition = "3s"
 		right.style.height = c2;
 
         }
