@@ -30,6 +30,8 @@ document.getElementById('time3').readOnly = true;
 document.getElementById('time4').readOnly = true;
 document.getElementById('time5').readOnly = true;
 
+document.getElementById('height').readOnly = false;
+
 document.getElementById('button_take_away').disabled = true;
 document.getElementById('button_add').disabled = true;
 
@@ -186,7 +188,7 @@ function calculate(){
       let g = parseFloat(document.getElementById("gravedad").value);
       let m1 = parseFloat(document.getElementById("masa1").value);
       if(document.getElementById('masa2').readOnly == true){
-
+              document.getElementById('height').readOnly = true;
               document.getElementById('button_add').disabled = false;
               let delt = parseFloat(document.getElementById('delta').value);
               let m2 = parseFloat(document.getElementById('masa2').value = m1+delt);
