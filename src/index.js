@@ -30,7 +30,6 @@ document.getElementById('time3').readOnly = true;
 document.getElementById('time4').readOnly = true;
 document.getElementById('time5').readOnly = true;
 
-document.getElementById('height').readOnly = false;
 
 document.getElementById('button_take_away').disabled = true;
 document.getElementById('button_add').disabled = true;
@@ -150,7 +149,6 @@ button_move.addEventListener("click", (e) => {
 
 var k = 2;
 function add_mass(){
-        document.getElementById('height').readOnly = true;
         let deltya  = document.getElementById('delta').value;
         let delt = parseFloat(deltya);
         document.getElementById("masa1").value = (temporary_mass*k);
@@ -164,7 +162,6 @@ function add_mass2(){
         t_1mass=parseFloat(document.getElementById('masa1').value);
         t_2mass=parseFloat(document.getElementById('masa2').value);
         del = parseFloat(document.getElementById('delta').value);
-        document.getElementById('height').readOnly = true;
         if (t_1mass-del/k2 > 0){
               deltya  = 0.1*(t_1mass + t_2mass);
               document.getElementById('masa1').value = round(parseFloat(t_1mass - deltya),2);
