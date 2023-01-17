@@ -89,8 +89,8 @@ function check_acceleration(){
       if (acceleration != 0){
                         mass_right.style.top = mass_right_position + "px";
                         mass_left.style.top = mass_left_position + "px";
-                        thread_left.style.height = 400 + "px";
-                        thread_right.style.height = 400 + "px";
+                        thread_left.style.height = 250 + "px";
+                        thread_right.style.height = 250 + "px";
 
       }
 }
@@ -128,13 +128,13 @@ button_lab1.addEventListener("click", (e) => {
 
 
 button_lab2.addEventListener("click", (e) => {
-   if (document.getElementById("masa1").value <= 0){
+   if (document.getElementById("masa1").value <= 0 || document.getElementById("masa1").value == ' '){
       alert("введите массу");
    }
-   if(document.getElementById("delta").value <=0){
+   if(document.getElementById("delta").value <=0 || document.getElementById("delta").value == ' '){
          alert("Введите разность масс");
    }
-   if (document.getElementById("height").value <= 0){
+   if (document.getElementById("height").value <= 0 || document.getElementById('height').value == ' '){
          alert("Введите высоту");
    }
    document.getElementById('masa2').readOnly = true;
@@ -199,7 +199,6 @@ function calculate(){
               }
 
       }
-
 
       if(document.getElementById('delta').readOnly == true){
                 document.getElementById('button_start').disabled = true;
@@ -287,19 +286,19 @@ function animate(){
             c2 = "425px";
 		}
 
-		wheels.style.transition = "3s";
+		wheels.style.transition = "2s";
 		wheels.style.transform = rotate;
 
-		mass_left.style.transition = "3s"
+		mass_left.style.transition = "2s"
 		mass_left.style.top = b1;
 
-		mass_right.style.transition = "3s"
+		mass_right.style.transition = "2s"
 		mass_right.style.top = b2;
 
-		left.style.transition = "3s"
+		left.style.transition = "2s"
         left.style.height = c1;
 
-		right.style.transition = "3s"
+		right.style.transition = "2s"
 		right.style.height = c2;
 
         }

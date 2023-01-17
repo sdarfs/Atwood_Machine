@@ -39,15 +39,15 @@ body {
 #thread_left {
   position: absolute;
   width: 5px;
-  height: 405px;
+  height: 255px;
   left: 990px;
-  top: 160px;
+  top: 165px;
   background-color: #292c2c;
 }
 
 #thread_right {
   position: absolute;
-  height:400px;
+  height:250px;
   width: 5px;
   left: 1160px;
   top: 160px;
@@ -64,13 +64,13 @@ body {
 #mass_right {
   background: url(mass.png);
   left: 1135px;
-  top:500px;
+  top:400px;
 
 }
 #mass_left {
   background: url(mass.png);
   left: 962px;
-  top: 500px;
+  top: 400px;
 }
 
 
