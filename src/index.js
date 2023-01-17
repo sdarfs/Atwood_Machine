@@ -179,7 +179,8 @@ function add_mass2(){
 
 
 function reset() {
-    location.reload();
+//    location.reload();
+       window.location.href = window.location.href;
 }
 
 function calculate(){
