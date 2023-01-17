@@ -159,7 +159,7 @@ body {
 }
 
 .modal {
-    line-height: 1.5em;
+    line-height: 1.4em;
     border-radius: 25px;
 	background-color: #fff;
 	width: 100%;
@@ -168,7 +168,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	display: none;
-	font-size: 16pt;
+	font-size: 15pt;
 }
 
 .modal-overlay--visible {
