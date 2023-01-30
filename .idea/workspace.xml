@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cdfacde-5f12-4527-a05c-b472eda03585" name="Changes" comment="update reload in MOZILLA browser">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mass.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="1cdfacde-5f12-4527-a05c-b472eda03585" name="Changes" comment="update buttons and mass png" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673960347889</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update buttons and mass png">
+      <created>1675055811246</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675055811246</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project" />
     <MESSAGE value="update reload in MOZILLA browser" />
-    <option name="LAST_COMMIT_MESSAGE" value="update reload in MOZILLA browser" />
+    <MESSAGE value="update buttons and mass png" />
+    <option name="LAST_COMMIT_MESSAGE" value="update buttons and mass png" />
   </component>
 </project>
