@@ -6,21 +6,7 @@ var box2 = document.getElementById("mass_right");
 var time_average = 0;
 var arr_time;
 
-const createCounter = () => {
-  // Переменная, определенная в области действия фабрики или конструктора
-  // является приватной для этой функции.
-  let count = 0;
 
-  return ({
-    // Любые другие функции, определенные в той же области, являются привилегированными:
-    // Они имеют доступ к закрытой переменной `count`
-    // определенной в любом месте их цепочки областей видимости (содержащей области действия функции).
-    click: () => count += 1,
-    getCount: () => count.toLocaleString()
-  });
-};
-
-const counter = createCounter();
 const mass_right_position = document.getElementById("mass_right").offsetTop;
 const mass_left_position = document.getElementById("mass_left").offsetTop;
 
@@ -87,10 +73,11 @@ var Buttons = class{
 
 function check_acceleration(){
       if (acceleration != 0){
-                        mass_right.style.top = mass_right_position + "px";
-                        mass_left.style.top = mass_left_position + "px";
-                        thread_left.style.height = 250 + "px";
-                        thread_right.style.height = 250 + "px";
+              mass_right.style.top = mass_right_position + "px";
+              mass_left.style.top = mass_left_position + "px";
+              thread_left.style.height = 250 + "px";
+              thread_right.style.height = 250 + "px";
+              wheels.style.transform = 0;
 
       }
 }
@@ -281,10 +268,10 @@ function animate(){
             c2 = "125px";
 		} else if(m1 < m2){
 			rotate = "rotate("+angular_acceleration+"deg)";
-			b1 = "35%";
-            b2 = "65%";
-			c1 = "125px";
-            c2 = "425px";
+			b1 = "34%";
+            b2 = "46%";
+			c1 = "185px";
+            c2 = "285px";
 		}
 
 		wheels.style.transition = "2s";

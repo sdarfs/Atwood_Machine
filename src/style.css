@@ -22,8 +22,6 @@ body {
   left: 995px;
 }
 
-
-
 #thread_top {
   position: absolute;
   width: 165px;
@@ -39,7 +37,7 @@ body {
 #thread_left {
   position: absolute;
   width: 5px;
-  height: 255px;
+  height: 305px;
   left: 990px;
   top: 165px;
   background-color: #292c2c;
@@ -47,7 +45,7 @@ body {
 
 #thread_right {
   position: absolute;
-  height:250px;
+  height:305px;
   width: 5px;
   left: 1160px;
   top: 160px;
@@ -68,13 +66,14 @@ body {
 
 }
 #mass_left {
-  background: url(mass.png);
+  background: url(mass2.png);
   left: 962px;
-  top: 400px;
+  top: 402px;
 }
 
 
 .floating-button {
+  position: fixed;
   text-decoration: none;
   display: inline-block;
   width: 140px;
@@ -112,8 +111,38 @@ body {
   color: white;
 
 }
+#button_start{
+   top:40px;
+}
+#button_reset{
+   top: 100px;
+}
+#button_add{
+  top: 100px;
+  left:450px;
+
+}
+
+#button_take_away{
+  top: 100px;
+  left: 220px;
+
+}
+
+#button_lab2{
+  top: 40px;
+  left: 450px
+
+}
+
+#button_lab1{
+  top: 40px;
+  left: 220px;
+
+}
+
 .btn {
-     text-decoration: none;
+      text-decoration: none;
       display: inline-block;
       width: 140px;
       height: 45px;
@@ -188,8 +217,9 @@ body {
 }
 
 .grid-item1{
-	height: 60px;
+   height: 140px;
 }
+
 .grid-item2  {
     border-radius: 15px;
     padding: 10px 4px 10px 4px;
