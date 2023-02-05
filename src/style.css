@@ -39,7 +39,7 @@ body {
   width: 4px;
   height: 305px;
   left: 990px;
-  top: 165px;
+  top: 155px;
   background-color: #292c2c;
 }
 
@@ -48,7 +48,7 @@ body {
   height:305px;
   width: 4px;
   left: 1160px;
-  top: 160px;
+  top: 150px;
   background-color: #292c2c;
 }
 
@@ -56,18 +56,18 @@ body {
 .mass {
   position: absolute;
   width: 60px;
-  height: 68px;
+  height: 105px;
   border-radius: 5px;
 }
 
 #mass_right {
-  background: url(mass.png);
+  background: url(m1.png);
   left: 1135px;
   top:400px;
 
 }
 #mass_left {
-  background: url(mass2.png);
+  background: url(m2.png);
   left: 962px;
   top: 402px;
 }
