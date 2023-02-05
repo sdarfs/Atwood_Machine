@@ -6,8 +6,6 @@ var box2 = document.getElementById("mass_right");
 var time_average = 0;
 var arr_time;
 
-
-
 const mass_right_position = document.getElementById("mass_right").offsetTop;
 const mass_left_position = document.getElementById("mass_left").offsetTop;
 
@@ -21,8 +19,6 @@ document.getElementById('time5').readOnly = true;
 document.getElementById('button_take_away').disabled = true;
 document.getElementById('button_add').disabled = true;
 
-//var thread_left = document.getElementById("thread_left");
-//var thread_right = document.getElementById("thread_right");
 var left = document.getElementById("thread_left");
 var right = document.getElementById("thread_right");
 var wheels = document.getElementById("wheel");
