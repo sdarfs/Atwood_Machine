@@ -7,6 +7,7 @@ var time_average = 0;
 var arr_time;
 
 
+
 const mass_right_position = document.getElementById("mass_right").offsetTop;
 const mass_left_position = document.getElementById("mass_left").offsetTop;
 
@@ -20,8 +21,8 @@ document.getElementById('time5').readOnly = true;
 document.getElementById('button_take_away').disabled = true;
 document.getElementById('button_add').disabled = true;
 
-var thread_left = document.getElementById("thread_left");
-var thread_right = document.getElementById("thread_right");
+//var thread_left = document.getElementById("thread_left");
+//var thread_right = document.getElementById("thread_right");
 var left = document.getElementById("thread_left");
 var right = document.getElementById("thread_right");
 var wheels = document.getElementById("wheel");
@@ -77,7 +78,8 @@ function check_acceleration(){
               mass_left.style.top = mass_left_position + "px";
               thread_left.style.height = 250 + "px";
               thread_right.style.height = 250 + "px";
-              wheels.style.transform = 0;
+              wheels.style.transform = "rotate("+0+"deg)";;
+              document.getElementById("button_move").disabled = false;
 
       }
 }
@@ -166,7 +168,6 @@ function add_mass2(){
 
 
 function reset() {
-//    location.reload();
        window.location.href = window.location.href;
 }
 
@@ -262,33 +263,36 @@ function animate(){
         let angular_acceleration = acceleration/r;
 		if(m1 > m2){
 			rotate = "rotate("+angular_acceleration+"deg)";
-			b1 = "65%";
-        	b2 = "35%";
-			c1 = "425px";
-            c2 = "125px";
+			b1 = "340px";
+        	b2 = "560px";
+
 		} else if(m1 < m2){
 			rotate = "rotate("+angular_acceleration+"deg)";
-			b1 = "34%";
-            b2 = "46%";
-			c1 = "185px";
-            c2 = "285px";
+			b1 = "560px";
+            b2 = "340px";
 		}
 
 		wheels.style.transition = "2s";
 		wheels.style.transform = rotate;
 
 		mass_left.style.transition = "2s"
-		mass_left.style.top = b1;
+		mass_left.style.top = b2;
 
 		mass_right.style.transition = "2s"
-		mass_right.style.top = b2;
+		mass_right.style.top = b1;
 
-		left.style.transition = "2s"
-        left.style.height = c1;
+		let posleft =  document.getElementById("mass_left").offsetTop;
+        let posright=  document.getElementById("mass_right").offsetTop;
+		let new_r = posright + mass_right_position*0.1 + "px";
+		let new_l = posleft*0.5 - mass_right_position*0.01 + "px";
 
-		right.style.transition = "2s"
-		right.style.height = c2;
+        left.style.transition = "2s"
+        left.style.height = new_l ;
 
+  		right.style.transition = "2s"
+  		right.style.height = new_r;
+
+  		document.getElementById("button_move").disabled = true;
         }
 }
 

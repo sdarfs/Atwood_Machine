@@ -36,7 +36,7 @@ body {
 
 #thread_left {
   position: absolute;
-  width: 5px;
+  width: 4px;
   height: 305px;
   left: 990px;
   top: 165px;
@@ -46,11 +46,12 @@ body {
 #thread_right {
   position: absolute;
   height:305px;
-  width: 5px;
+  width: 4px;
   left: 1160px;
   top: 160px;
   background-color: #292c2c;
 }
+
 
 .mass {
   position: absolute;
