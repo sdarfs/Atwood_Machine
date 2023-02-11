@@ -36,3 +36,10 @@
                  
                  
 https://sdarfs.github.io/Atwood_Machine/
+
+
+
+
+<img width="1031" alt="Screenshot 2023-02-11 at 19 19 06" src="https://user-images.githubusercontent.com/90207373/218257586-f78cfd1a-6996-4b85-a91d-9a9eda7dd005.png">
+
+
